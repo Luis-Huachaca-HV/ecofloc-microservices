@@ -9,7 +9,24 @@
 
 **EcoFloc** has been made possible thanks to **Technopôle Domolandes**[^1], an organization deeply committed to innovation and the development of the Landes region in France and beyond, as well as the **Université de Pau et des Pays de l'Adour** and **Université de Toulouse**. These institutions are engaged in advancing research and development in France, contributing significantly to technological progress and regional growth. Their continuous efforts have been instrumental in bringing this project to life.
 
-## Description
+## Luis Version
+
+Here what we have to do is just follow the same steps to configure ecofloc as it is stated, but to make this functional for docker and kubernetes environmentes we need a pids.txt in the folder, and after you configure all the .confs according to your computer values, you need to modify the path according to your route, for example:
+
+```
+        // put your directory here
+        FILE *file = fopen("/home/luish/Documents/repoluispro/ecofloc-microservices/pids.txt", "r");
+        if (file == NULL) 
+
+```
+then you neet to modify this in all the comm_energy files that you want to measure on. meaning gpu/comm_energy.c, cpu/comm_energy.c and the others, then you have to install the dependencies as of the readme says, then you only have to execute:
+
+```
+./ecofloc-cpu.out -n text -i 1000 -t 10
+```
+
+And it should be working.
+
 
 **EcoFloc** is a comprehensive and versatile tool developed by the R&D laboratory of Technopôle Domolandes[^1], supported by Université de Pau et des Pays de l'Adour and Université de Toulouse.
 

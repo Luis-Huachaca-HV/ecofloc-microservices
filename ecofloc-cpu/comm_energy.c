@@ -201,7 +201,8 @@ void *discover_pids(void *arg)
         int found_new_pid = 0;
 
         // Read PIDs from the file
-        FILE *file = fopen("/home/luish/Documents/p3/ecofloc/pids.txt", "r");
+        // put your directory here
+        FILE *file = fopen("/home/luish/Documents/repoluispro/ecofloc-microservices/pids.txt", "r");
         if (file == NULL) 
         {
             perror("Failed to open pids.txt");
