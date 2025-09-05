@@ -131,6 +131,7 @@ int is_treated(int pid)
     return 0;  // PID has not been treated
 }
 
+/*
 void *discover_pids(void *arg) 
 {
     const char *cmd_name = (const char *)arg;
@@ -182,6 +183,55 @@ void *discover_pids(void *arg)
           break;
        
 
+
+        sleep(SLEEP_PID_DISCOVERING);
+    }
+    return NULL;
+}
+*/
+/**/
+
+void *discover_pids(void *arg) 
+{
+    const char *cmd_name = (const char *)arg;
+    global_start_time = time(NULL);
+
+    while (1) 
+    {
+        int found_new_pid = 0;
+
+        // Read PIDs from the file located one level up
+        FILE *file = fopen("/home/luish/Documents/p3/ecofloc/pids.txt", "r");
+        if (file == NULL) 
+        {
+            perror("Failed to open ../pids.txt");
+            exit(EXIT_FAILURE);
+        }
+
+        int pid;
+        while (fscanf(file, "%d", &pid) != EOF) 
+        {
+            if (!is_treated(pid)) 
+            {
+                pthread_mutex_lock(&mutex);
+                new_pids[new_pid_count++] = pid;
+                found_new_pid = 1;
+                pthread_mutex_unlock(&mutex);
+            }
+        }
+        fclose(file);
+
+        if (found_new_pid) 
+            launch_energy_threads();
+
+        signal(SIGINT, handle_sigint); // CNTRL + C from pid_energy.h
+
+        if (keep_running == 0) // CNTRL + C declared in the pid_energy.h file
+            break;
+        if (((time(NULL) - global_start_time) >= timeout_s_global)) // Timeout
+            break;
+        if (!found_new_pid && active_thread_count == 0 && dynamic_mode == 0) // No more pids and no dynamic_mode         
+            break;
 
         sleep(SLEEP_PID_DISCOVERING);
     }

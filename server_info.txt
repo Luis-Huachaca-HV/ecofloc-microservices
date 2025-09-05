@@ -1,7 +1,7 @@
 ====================================
 System Information
 ====================================
-Linux dragonklavier-ASUS 6.9.3-3-MANJARO #1 SMP PREEMPT_DYNAMIC Mon Jun 10 09:50:04 UTC 2024 x86_64 GNU/Linux
+Linux luish-Nitro-AN515-57 6.8.0-51-generic #52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 
 ====================================
 CPU Information
@@ -10,31 +10,27 @@ Architecture:                         x86_64
 CPU op-mode(s):                       32-bit, 64-bit
 Address sizes:                        39 bits physical, 48 bits virtual
 Byte Order:                           Little Endian
-CPU(s):                               8
-On-line CPU(s) list:                  0-7
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
 Vendor ID:                            GenuineIntel
-BIOS Vendor ID:                       Intel(R) Corporation
-Model name:                           11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-BIOS Model name:                      11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz To Be Filled By O.E.M. CPU @ 2.8GHz
-BIOS CPU family:                      198
+Model name:                           11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 CPU family:                           6
-Model:                                140
+Model:                                141
 Thread(s) per core:                   2
-Core(s) per socket:                   4
+Core(s) per socket:                   8
 Socket(s):                            1
 Stepping:                             1
-CPU(s) scaling MHz:                   25%
-CPU max MHz:                          4700,0000
-CPU min MHz:                          400,0000
-BogoMIPS:                             5608,00
+CPU max MHz:                          4600,0000
+CPU min MHz:                          800,0000
+BogoMIPS:                             4608.00
 Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 Virtualization:                       VT-x
-L1d cache:                            192 KiB (4 instances)
-L1i cache:                            128 KiB (4 instances)
-L2 cache:                             5 MiB (4 instances)
-L3 cache:                             12 MiB (1 instance)
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
 NUMA node(s):                         1
-NUMA node0 CPU(s):                    0-7
+NUMA node0 CPU(s):                    0-15
 Vulnerability Gather data sampling:   Mitigation; Microcode
 Vulnerability Itlb multihit:          Not affected
 Vulnerability L1tf:                   Not affected
@@ -56,16 +52,16 @@ CPU Information - /proc
 processor	: 0
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1213.040
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 2300.000
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 0
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 0
 initial apicid	: 0
 fpu		: yes
@@ -75,7 +71,7 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
@@ -84,16 +80,16 @@ power management:
 processor	: 1
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1270.808
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 2313.614
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 1
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 2
 initial apicid	: 2
 fpu		: yes
@@ -103,7 +99,7 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
@@ -112,16 +108,16 @@ power management:
 processor	: 2
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1129.275
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 1074.038
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 2
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 4
 initial apicid	: 4
 fpu		: yes
@@ -131,7 +127,7 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
@@ -140,16 +136,16 @@ power management:
 processor	: 3
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1178.905
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 2249.964
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 3
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 6
 initial apicid	: 6
 fpu		: yes
@@ -159,7 +155,7 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
@@ -168,16 +164,128 @@ power management:
 processor	: 4
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1152.705
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 2129.035
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
+core id		: 4
+cpu cores	: 8
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 800.000
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 5
+cpu cores	: 8
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2250.872
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 6
+cpu cores	: 8
+apicid		: 12
+initial apicid	: 12
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 885.263
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 7
+cpu cores	: 8
+apicid		: 14
+initial apicid	: 14
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2593.603
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
 core id		: 0
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 1
 initial apicid	: 1
 fpu		: yes
@@ -187,25 +295,25 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
 power management:
 
-processor	: 5
+processor	: 9
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1178.349
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 2305.211
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 1
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 3
 initial apicid	: 3
 fpu		: yes
@@ -215,25 +323,25 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
 power management:
 
-processor	: 6
+processor	: 10
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 931.437
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 800.705
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 2
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 5
 initial apicid	: 5
 fpu		: yes
@@ -243,25 +351,25 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
 power management:
 
-processor	: 7
+processor	: 11
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 140
-model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
-microcode	: 0xb6
-cpu MHz		: 1196.398
-cache size	: 12288 KB
+microcode	: 0x52
+cpu MHz		: 1695.637
+cache size	: 24576 KB
 physical id	: 0
-siblings	: 8
+siblings	: 16
 core id		: 3
-cpu cores	: 4
+cpu cores	: 8
 apicid		: 7
 initial apicid	: 7
 fpu		: yes
@@ -271,7 +379,119 @@ wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
 vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
 bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
-bogomips	: 5608.00
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2409.220
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 4
+cpu cores	: 8
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2520.904
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 5
+cpu cores	: 8
+apicid		: 11
+initial apicid	: 11
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2092.962
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 6
+cpu cores	: 8
+apicid		: 13
+initial apicid	: 13
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0x52
+cpu MHz		: 2528.403
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 7
+cpu cores	: 8
+apicid		: 15
+initial apicid	: 15
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi
+bogomips	: 4608.00
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 39 bits physical, 48 bits virtual
@@ -282,149 +502,162 @@ power management:
 Block Devices
 ====================================
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-loop0         7:0    0  63,9M  1 loop /var/lib/snapd/snap/core20/2105
-loop1         7:1    0  63,9M  1 loop /var/lib/snapd/snap/core20/2318
-loop2         7:2    0  74,2M  1 loop /var/lib/snapd/snap/core22/1122
-loop3         7:3    0  74,2M  1 loop /var/lib/snapd/snap/core22/1380
-loop4         7:4    0  11,8M  1 loop /var/lib/snapd/snap/hp-printer-app/400
-loop5         7:5    0  11,9M  1 loop /var/lib/snapd/snap/hp-printer-app/451
-loop6         7:6    0  38,7M  1 loop /var/lib/snapd/snap/snapd/21465
-loop7         7:7    0  38,8M  1 loop /var/lib/snapd/snap/snapd/21759
-sda           8:0    0 465,8G  0 disk 
-├─sda1        8:1    0   100M  0 part 
-├─sda2        8:2    0    16M  0 part 
-├─sda3        8:3    0 464,6G  0 part 
-└─sda4        8:4    0   1,1G  0 part 
-nvme0n1     259:0    0 476,9G  0 disk 
-├─nvme0n1p1 259:1    0  1001M  0 part /boot/efi
-├─nvme0n1p2 259:2    0  1000M  0 part /boot
-├─nvme0n1p3 259:3    0  31,3G  0 part [SWAP]
-└─nvme0n1p4 259:4    0 443,7G  0 part /
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0 316,5M  1 loop /snap/code/176
+loop2         7:2    0 317,7M  1 loop /snap/code/181
+loop3         7:3    0  63,7M  1 loop /snap/core20/2434
+loop4         7:4    0  73,9M  1 loop /snap/core22/1663
+loop5         7:5    0  73,9M  1 loop /snap/core22/1722
+loop6         7:6    0 139,6M  1 loop /snap/docker/2963
+loop7         7:7    0 273,7M  1 loop /snap/firefox/5437
+loop8         7:8    0 274,8M  1 loop /snap/firefox/5561
+loop9         7:9    0 505,1M  1 loop /snap/gnome-42-2204/176
+loop10        7:10   0  91,7M  1 loop /snap/gtk-common-themes/1535
+loop11        7:11   0   9,7M  1 loop /snap/htop/4407
+loop12        7:12   0  12,9M  1 loop /snap/snap-store/1113
+loop13        7:13   0  12,2M  1 loop /snap/snap-store/1216
+loop14        7:14   0  44,3M  1 loop /snap/snapd/23258
+loop15        7:15   0  44,4M  1 loop /snap/snapd/23545
+loop16        7:16   0   500K  1 loop /snap/snapd-desktop-integration/178
+loop17        7:17   0   568K  1 loop /snap/snapd-desktop-integration/253
+loop18        7:18   0   4,4M  1 loop /snap/tree/54
+nvme0n1     259:0    0 931,5G  0 disk 
+├─nvme0n1p1 259:1    0   100M  0 part /boot/efi
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 734,4G  0 part 
+├─nvme0n1p4 259:4    0   1,1G  0 part 
+├─nvme0n1p5 259:5    0  79,2G  0 part /
+├─nvme0n1p6 259:6    0 102,4G  0 part 
+├─nvme0n1p7 259:7    0  13,7G  0 part [SWAP]
+└─nvme0n1p8 259:8    0   687M  0 part 
 
 ====================================
 PCI Devices
 ====================================
-00:00.0 Host bridge: Intel Corporation 11th Gen Core Processor Host Bridge/DRAM Registers (rev 01)
-00:02.0 VGA compatible controller: Intel Corporation TigerLake-LP GT2 [Iris Xe Graphics] (rev 01)
-00:04.0 Signal processing controller: Intel Corporation TigerLake-LP Dynamic Tuning Processor Participant (rev 01)
-00:06.0 PCI bridge: Intel Corporation 11th Gen Core Processor PCIe Controller (rev 01)
-00:08.0 System peripheral: Intel Corporation GNA Scoring Accelerator module (rev 01)
-00:0a.0 Signal processing controller: Intel Corporation Tigerlake Telemetry Aggregator Driver (rev 01)
-00:0d.0 USB controller: Intel Corporation Tiger Lake-LP Thunderbolt 4 USB Controller (rev 01)
-00:14.0 USB controller: Intel Corporation Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller (rev 20)
-00:14.2 RAM memory: Intel Corporation Tiger Lake-LP Shared SRAM (rev 20)
-00:14.3 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 20)
-00:15.0 Serial bus controller: Intel Corporation Tiger Lake-LP Serial IO I2C Controller #0 (rev 20)
-00:15.1 Serial bus controller: Intel Corporation Tiger Lake-LP Serial IO I2C Controller #1 (rev 20)
-00:16.0 Communication controller: Intel Corporation Tiger Lake-LP Management Engine Interface (rev 20)
-00:17.0 SATA controller: Intel Corporation Tiger Lake-LP SATA Controller (rev 20)
-00:1f.0 ISA bridge: Intel Corporation Tiger Lake-LP LPC Controller (rev 20)
-00:1f.3 Multimedia audio controller: Intel Corporation Tiger Lake-LP Smart Sound Technology Audio Controller (rev 20)
-00:1f.4 SMBus: Intel Corporation Tiger Lake-LP SMBus Controller (rev 20)
-00:1f.5 Serial bus controller: Intel Corporation Tiger Lake-LP SPI Controller (rev 20)
-00:1f.6 Ethernet controller: Intel Corporation Ethernet Connection (13) I219-V (rev 20)
-01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980 (DRAM-less)
+0000:00:00.0 Host bridge: Intel Corporation 11th Gen Core Processor Host Bridge/DRAM Registers (rev 05)
+0000:00:01.0 PCI bridge: Intel Corporation 11th Gen Core Processor PCIe Controller #1 (rev 05)
+0000:00:02.0 VGA compatible controller: Intel Corporation TigerLake-H GT1 [UHD Graphics] (rev 01)
+0000:00:04.0 Signal processing controller: Intel Corporation TigerLake-LP Dynamic Tuning Processor Participant (rev 05)
+0000:00:08.0 System peripheral: Intel Corporation GNA Scoring Accelerator module (rev 05)
+0000:00:0d.0 USB controller: Intel Corporation Tiger Lake-H Thunderbolt 4 USB Controller (rev 05)
+0000:00:0e.0 RAID bus controller: Intel Corporation Volume Management Device NVMe RAID Controller
+0000:00:14.0 USB controller: Intel Corporation Tiger Lake-H USB 3.2 Gen 2x1 xHCI Host Controller (rev 11)
+0000:00:14.2 RAM memory: Intel Corporation Tiger Lake-H Shared SRAM (rev 11)
+0000:00:14.3 Network controller: Intel Corporation Tiger Lake PCH CNVi WiFi (rev 11)
+0000:00:15.0 Serial bus controller: Intel Corporation Tiger Lake-H Serial IO I2C Controller #0 (rev 11)
+0000:00:15.1 Serial bus controller: Intel Corporation Device 43e9 (rev 11)
+0000:00:16.0 Communication controller: Intel Corporation Tiger Lake-H Management Engine Interface (rev 11)
+0000:00:17.0 System peripheral: Intel Corporation Device 09ab
+0000:00:1c.0 PCI bridge: Intel Corporation Tiger Lake-H PCI Express Root Port #5 (rev 11)
+0000:00:1e.0 Communication controller: Intel Corporation Device 43a8 (rev 11)
+0000:00:1e.3 Serial bus controller: Intel Corporation Device 43ab (rev 11)
+0000:00:1f.0 ISA bridge: Intel Corporation Tiger Lake-H LPC/eSPI Controller (rev 11)
+0000:00:1f.3 Audio device: Intel Corporation Tiger Lake-H HD Audio Controller (rev 11)
+0000:00:1f.4 SMBus: Intel Corporation Tiger Lake-H SMBus Controller (rev 11)
+0000:00:1f.5 Serial bus controller: Intel Corporation Tiger Lake-H SPI Controller (rev 11)
+0000:01:00.0 VGA compatible controller: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] (rev a1)
+0000:01:00.1 Audio device: NVIDIA Corporation Device 2291 (rev a1)
+0000:02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. Device 2600 (rev 21)
+10000:e0:01.0 System peripheral: Intel Corporation Device 09ab
+10000:e0:01.1 PCI bridge: Intel Corporation Device 9a05 (rev 05)
+10000:e0:17.0 SATA controller: Intel Corporation Device 43d3 (rev 11)
+10000:e1:00.0 Non-Volatile memory controller: Sandisk Corp Device 5014
 
 ====================================
 USB Devices
 ====================================
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-Bus 003 Device 002: ID 046d:c534 Logitech, Inc. Nano Receiver
-Bus 003 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
-Bus 003 Device 004: ID 13d3:56a2 IMC Networks USB2.0 HD UVC WebCam
-Bus 003 Device 005: ID 04f3:0c6c Elan Microelectronics Corp. ELAN:ARM-M4
-Bus 003 Device 006: ID 8087:0026 Intel Corp. AX201 Bluetooth
 Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 003: ID 04f2:b64f Chicony Electronics Co., Ltd HD User Facing
+Bus 003 Device 004: ID 8087:0026 Intel Corp. AX201 Bluetooth
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 ====================================
 Mounted Filesystems
 ====================================
 Filesystem      Size  Used Avail Use% Mounted on
-dev              16G     0   16G   0% /dev
-run              16G  2,0M   16G   1% /run
-efivarfs        128K  110K   14K  90% /sys/firmware/efi/efivars
-/dev/nvme0n1p4  436G  279G  135G  68% /
-tmpfs            16G  259M   16G   2% /dev/shm
-/dev/loop1       64M   64M     0 100% /var/lib/snapd/snap/core20/2318
-/dev/loop5       12M   12M     0 100% /var/lib/snapd/snap/hp-printer-app/451
-/dev/loop4       12M   12M     0 100% /var/lib/snapd/snap/hp-printer-app/400
-/dev/loop0       64M   64M     0 100% /var/lib/snapd/snap/core20/2105
-/dev/loop2       75M   75M     0 100% /var/lib/snapd/snap/core22/1122
-/dev/loop6       39M   39M     0 100% /var/lib/snapd/snap/snapd/21465
-/dev/loop7       39M   39M     0 100% /var/lib/snapd/snap/snapd/21759
-/dev/loop3       75M   75M     0 100% /var/lib/snapd/snap/core22/1380
-tmpfs            16G   84M   16G   1% /tmp
-/dev/nvme0n1p2  966M  551M  350M  62% /boot
-/dev/nvme0n1p1  999M   20M  980M   2% /boot/efi
-tmpfs           3,2G  108K  3,2G   1% /run/user/1000
+tmpfs           1,6G  2,5M  1,6G   1% /run
+/dev/nvme0n1p5   78G   57G   18G  77% /
+tmpfs           7,7G  192M  7,6G   3% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+efivarfs        184K  146K   34K  82% /sys/firmware/efi/efivars
+/dev/nvme0n1p1   96M   37M   60M  39% /boot/efi
+tmpfs           1,6G  124K  1,6G   1% /run/user/1000
 
 ====================================
 DMI Table Decoder
 ====================================
-# dmidecode 3.5
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x724A5000.
+Table at 0x429DC000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
-	Vendor: ASUSTeK COMPUTER INC.
-	Version: B1500CEAEY.320
-	Release Date: 11/04/2022
-	Address: 0xF0000
-	Runtime Size: 64 kB
-	ROM Size: 16 MB
+	Vendor: Insyde Corp.
+	Version: V1.17
+	Release Date: 06/02/2022
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
 		BIOS shadowing is allowed
 		Boot from CD is supported
 		Selectable boot is supported
-		BIOS ROM is socketed
 		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		8042 keyboard services are supported (int 9h)
+		CGA/mono video services are supported (int 10h)
 		ACPI is supported
-		Smart battery is supported
+		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.19
+	BIOS Revision: 1.17
+	Firmware Revision: 1.10
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
-	Manufacturer: ASUSTeK COMPUTER INC.
-	Product Name: ASUS EXPERTBOOK B1500CEAEY_B1500CEAE
-	Version: 1.0       
-	Serial Number: N3NXCV09R232104
-	UUID: e323c2ac-d1bf-1941-8cd2-46903d7eed9b
+	Manufacturer: Acer
+	Product Name: Nitro AN515-57
+	Version: V1.17
+	Serial Number: NHQESAA001137184AB3400
+	UUID: 207ca225-2515-ec11-80e1-088fc3199c6f
 	Wake-up Type: Power Switch
-	SKU Number:  
-	Family: ASUS EXPERTBOOK
+	SKU Number: 0000000000000000
+	Family: Nitro 5
 
-Handle 0x0002, DMI type 2, 15 bytes
+Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
-	Manufacturer: ASUSTeK COMPUTER INC.
-	Product Name: B1500CEAEY
-	Version: 1.0       
-	Serial Number: N310NXCV002PZZMB
-	Asset Tag: ATN12345678901234567
+	Manufacturer: TGL
+	Product Name: Scala_TLS
+	Version: V1.17
+	Serial Number: NBQES110031378987D3400
+	Asset Tag: Type2 - Board Asset Tag
 	Features:
 		Board is a hosting board
 		Board is replaceable
-	Location In Chassis: MIDDLE              
+	Location In Chassis: Type2 - Board Chassis Location
 	Chassis Handle: 0x0003
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0003, DMI type 3, 22 bytes
+Handle 0x0003, DMI type 3, 24 bytes
 Chassis Information
-	Manufacturer: ASUSTeK COMPUTER INC.
+	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: 1.0       
-	Serial Number: N3NXCV09R232104
-	Asset Tag: No Asset Tag
+	Version: V1.17
+	Serial Number: Chassis Serial Number
+	Asset Tag:                       
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -433,298 +666,16 @@ Chassis Information
 	Height: Unspecified
 	Number Of Power Cords: 1
 	Contained Elements: 0
-	SKU Number: NA
+	SKU Number: <BAD INDEX>
 
-Handle 0x0006, DMI type 12, 5 bytes
-System Configuration Options
-	Option 1: Default string
-
-Handle 0x0007, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 1
-		en|US|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x0008, DMI type 31, 28 bytes
-Boot Integrity Services Entry Point
-	Checksum: Invalid
-	16-bit Entry Point Address: FFFF:FFFF
-	32-bit Entry Point Address: 0xFFFFFFFF
-
-Handle 0x0009, DMI type 32, 11 bytes
-System Boot Information
-	Status: No errors detected
-
-Handle 0x0010, DMI type 44, 9 bytes
-Unknown Type
-	Header and Data:
-		2C 09 10 00 00 00 01 01 00
-
-Handle 0x0011, DMI type 43, 31 bytes
-TPM Device
-	Vendor ID: IFX
-	Specification Version: 2.0
-	Firmware Revision: 7.85
-	Description: INFINEON
-	Characteristics:
-		Family configurable via platform software support
-	OEM-specific Information: 0x00000000
-
-Handle 0x0012, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 128 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 2
-
-Handle 0x001B, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Array Handle: 0x0012
-	Partition Width: 2
-
-Handle 0x001C, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0012
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: Controller0-ChannelA-DIMM0
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 3200 MT/s
-	Manufacturer: Micron Technology
-	Serial Number: 3A307336
-	Asset Tag: 9876543210
-	Part Number: 8ATF2G64HZ-3G2F1    
-	Rank: 1
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0x2C
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 16 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x001D, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0012
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: Controller1-ChannelA
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 3200 MT/s
-	Manufacturer: Samsung
-	Serial Number: 00000000
-	Asset Tag: 9876543210
-	Part Number: M471A2G44AM0-CWE    
-	Rank: 1
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0xCE
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 16 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x001E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001C
-	Memory Array Mapped Address Handle: 0x001B
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x001F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001D
-	Memory Array Mapped Address Handle: 0x001B
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 1
-
-Handle 0x0020, DMI type 221, 12 bytes
-OEM-specific Type
-	Header and Data:
-		DD 0C 20 00 01 01 00 02 00 00 4F 12
-	Strings:
-		BIOS Guard
-
-Handle 0x0021, DMI type 221, 26 bytes
-OEM-specific Type
-	Header and Data:
-		DD 1A 21 00 03 01 00 0A 00 38 51 00 02 00 00 00
-		00 9A 00 03 00 01 0E 19 00 00
-	Strings:
-		Reference Code - CPU
-		uCode Version
-		TXT ACM version
-
-Handle 0x0022, DMI type 221, 26 bytes
-OEM-specific Type
-	Header and Data:
-		DD 1A 22 00 03 01 00 0A 00 38 51 00 02 00 00 00
-		00 00 00 03 04 0F 00 23 9F 07
-	Strings:
-		Reference Code - ME
-		MEBx version
-		ME Firmware Version
-		Consumer SKU
-
-Handle 0x0023, DMI type 221, 47 bytes
-OEM-specific Type
-	Header and Data:
-		DD 2F 23 00 06 01 00 0A 00 38 51 00 02 03 FF FF
-		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
-		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
-	Strings:
-		Reference Code - PCH
-		PCH-CRID Status
-		Disabled
-		PCH-CRID Original Value
-		PCH-CRID New Value
-		OPROM - RST - RAID
-		PCH Hsio Version
-
-Handle 0x0024, DMI type 221, 82 bytes
-OEM-specific Type
-	Header and Data:
-		DD 52 24 00 0B 01 00 0A 00 38 51 00 02 00 01 00
-		0C 00 00 03 00 0A 00 38 51 00 04 05 FF FF FF FF
-		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 06 00 00 0A 00 00
-		00 00 F9 00 0B 00 00 00 00 00 00 0C 00 FF FF FF
-		FF FF
-	Strings:
-		Reference Code - SA - System Agent
-		Reference Code - MRC
-		SA - PCIe Version
-		SA-CRID Status
-		Disabled
-		SA-CRID Original Value
-		SA-CRID New Value
-		OPROM - VBIOS
-		IO Manageability Engine FW Version
-		PHY Build Version
-		Thunderbolt(TM) FW Version
-		System Agent Manageability Engine FW Version
-
-Handle 0x0025, DMI type 221, 12 bytes
-OEM-specific Type
-	Header and Data:
-		DD 0C 25 00 01 01 00 04 00 00 00 00
-	Strings:
-		FSP Binary Version
-
-Handle 0x0026, DMI type 7, 27 bytes
-Cache Information
-	Socket Designation: L1 Cache
-	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 192 kB
-	Maximum Size: 192 kB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Parity
-	System Type: Data
-	Associativity: 12-way Set-associative
-
-Handle 0x0027, DMI type 7, 27 bytes
-Cache Information
-	Socket Designation: L1 Cache
-	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Parity
-	System Type: Instruction
-	Associativity: 8-way Set-associative
-
-Handle 0x0028, DMI type 7, 27 bytes
-Cache Information
-	Socket Designation: L2 Cache
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 5 MB
-	Maximum Size: 5 MB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: Other
-
-Handle 0x0029, DMI type 7, 27 bytes
-Cache Information
-	Socket Designation: L3 Cache
-	Configuration: Enabled, Not Socketed, Level 3
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Multi-bit ECC
-	System Type: Unified
-	Associativity: 12-way Set-associative
-
-Handle 0x002A, DMI type 4, 48 bytes
+Handle 0x0004, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
 	Family: Core i7
 	Manufacturer: Intel(R) Corporation
-	ID: C1 06 08 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 140, Stepping 1
+	ID: D1 06 08 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 141, Stepping 1
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -754,22 +705,22 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+	Version: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 4700 MHz
-	Current Speed: 2800 MHz
+	Max Speed: 5000 MHz
+	Current Speed: 2277 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x0027
-	L2 Cache Handle: 0x0028
-	L3 Cache Handle: 0x0029
+	L1 Cache Handle: 0x0006
+	L2 Cache Handle: 0x0007
+	L3 Cache Handle: 0x0008
 	Serial Number: To Be Filled By O.E.M.
 	Asset Tag: To Be Filled By O.E.M.
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -778,100 +729,547 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x003D, DMI type 10, 26 bytes
-On Board Device 1 Information
+Handle 0x0005, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Data
+	Associativity: 12-way Set-associative
+
+Handle 0x0006, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Instruction
+	Associativity: 8-way Set-associative
+
+Handle 0x0007, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: Other
+
+Handle 0x0008, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 12-way Set-associative
+
+Handle 0x0009, DMI type 10, 6 bytes
+On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: VGA
-On Board Device 2 Information
-	Type: Ethernet
-	Status: Enabled
-	Description: GLAN
-On Board Device 3 Information
-	Type: Ethernet
-	Status: Enabled
-	Description: WLAN
-On Board Device 4 Information
-	Type: Sound
-	Status: Enabled
-	Description: Audio CODEC
-On Board Device 5 Information
-	Type: SATA Controller
-	Status: Enabled
-	Description: SATA Controller
-On Board Device 6 Information
-	Type: Other
-	Status: Enabled
-	Description: USB 2.0 Controller
-On Board Device 7 Information
-	Type: Other
-	Status: Enabled
-	Description: USB 3.0 Controller
-On Board Device 8 Information
-	Type: Other
-	Status: Enabled
-	Description: SMBus Controller
-On Board Device 9 Information
-	Type: Other
-	Status: Enabled
-	Description: Card Reader
-On Board Device 10 Information
-	Type: Other
-	Status: Enabled
-	Description: Cmos Camera
-On Board Device 11 Information
-	Type: Other
-	Status: Enabled
-	Description: Bluetooth
+	Description: Intel Video Graphics Controller
 
-Handle 0x003E, DMI type 11, 5 bytes
+Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
-	String 1:  
-	String 2:  
-	String 3:  
-	String 4:  
-	String 5: 90NX0441-M20190
+	String 1: Acer System
 
-Handle 0x003F, DMI type 131, 64 bytes
+Handle 0x000B, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: SWK2: Close to Turn Off the System Power
+
+Handle 0x000C, DMI type 14, 8 bytes
+Group Associations
+	Name: $MEI
+	Items: 1
+		0x001D (OEM-specific)
+
+Handle 0x0025, DMI type 14, 23 bytes
+Group Associations
+	Name: Firmware Version Info
+	Items: 6
+		0x001E (OEM-specific)
+		0x001F (OEM-specific)
+		0x0020 (OEM-specific)
+		0x0021 (OEM-specific)
+		0x0022 (OEM-specific)
+		0x0023 (OEM-specific)
+
+Handle 0x000D, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 128 GB
+	Error Information Handle: No Error
+	Number Of Devices: 8
+
+Handle 0x000E, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: Controller0-ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: Samsung
+	Serial Number: 41D73DA1
+	Asset Tag: 9876543210
+	Part Number: M471A1K43EB1-CWE    
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000F, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller0-ChannelB-DIMM0
+	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0010, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller0-ChannelC-DIMM0
+	Bank Locator: BANK 2
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0011, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller0-ChannelD-DIMM0
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0012, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: Controller1-ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: Samsung
+	Serial Number: 41D73915
+	Asset Tag: 9876543210
+	Part Number: M471A1K43EB1-CWE    
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0013, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller1-ChannelB-DIMM0
+	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0014, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller1-ChannelC-DIMM0
+	Bank Locator: BANK 2
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0015, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: Controller1-ChannelD-DIMM0
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0016, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Array Handle: 0x000D
+	Partition Width: 2
+
+Handle 0x0017, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0016
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0018, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0016
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0019, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3F 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		9F 07 23 00 00 00 00 00 FE 00 FC 15 00 00 00 00
-		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+		83 40 19 00 31 00 00 00 00 00 00 00 00 00 00 00
+		F8 00 8B 43 00 00 00 00 01 00 00 00 00 00 0F 00
+		B4 06 1E 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		00 FF 00 00 E6 01 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0040, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: VGA
-	Type: Video
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:02.0
+Handle 0x001A, DMI type 170, 86 bytes
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x00ef
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x100e
+	Communication Function Key Number: 3
 
-Handle 0x0041, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: WLAN
-	Type: Ethernet
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:14.3
-
-Handle 0x0042, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: GLAN
-	Type: Ethernet
-	Status: Enabled
-	Type Instance: 2
-	Bus Address: 0000:00:1f.6
-
-Handle 0x0043, DMI type 221, 89 bytes
+Handle 0x001B, DMI type 171, 59 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 43 00 0C 01 00 00 00 00 A6 00 02 00 FF FF
+		AB 3B 1B 00 04 F2 04 4F B6 01 86 80 60 9A 01 DE
+		10 A0 25 02 EC 10 00 26 05 86 80 C8 43 19 86 80
+		F0 43 0D 00 00 00 00 11 00 00 00 00 13 00 00 00
+		00 15 00 00 00 00 16 00 00 00 00
+
+Handle 0x001C, DMI type 172, 57 bytes
+OEM-specific Type
+	Header and Data:
+		AC 39 1C 00 02 53 01 FF 00 02 03 00 03 FF 00 04
+		FF 00 05 0F 00 06 FF 00 07 FF 00 08 04 00 09 02
+		00 0A 01 00 0B 02 00 0C FF 00 0D 00 00 0E 01 00
+		0F 01 00 10 FF 00 11 FF 00
+
+Handle 0x001D, DMI type 219, 106 bytes
+OEM-specific Type
+	Header and Data:
+		DB 6A 1D 00 01 04 01 45 02 00 90 06 01 85 39 20
+		00 00 00 00 40 00 00 00 00 00 00 00 00 60 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
+
+Handle 0x001E, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 1E 00 03 01 00 0A 00 4E 11 00 02 00 00 00
+		00 3C 00 03 00 FF FF FF FF FF
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
+
+Handle 0x001F, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 1F 00 03 01 00 0A 00 4E 11 00 02 00 00 00
+		00 00 00 03 04 0F 00 1E B4 06
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
+
+Handle 0x0020, DMI type 221, 47 bytes
+OEM-specific Type
+	Header and Data:
+		DD 2F 20 00 06 01 00 0A 00 4E 11 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
+		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
+	Strings:
+		Reference Code - PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		PCH Hsio Version
+
+Handle 0x0021, DMI type 221, 82 bytes
+OEM-specific Type
+	Header and Data:
+		DD 52 21 00 0B 01 00 0A 00 4E 11 00 02 00 02 00
+		02 00 00 03 00 0A 00 4E 11 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 05 00 07 00 00 00 00 05 00 08
+		00 FF FF FF FF FF 09 00 18 01 06 00 00 0A 00 00
+		00 00 94 00 0B 00 00 00 00 00 00 0C 00 FF FF FF
+		FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+		IO Manageability Engine FW Version
+		PHY Build Version
+		Thunderbolt(TM) FW Version
+		System Agent Manageability Engine FW Version
+
+Handle 0x0022, DMI type 221, 12 bytes
+OEM-specific Type
+	Header and Data:
+		DD 0C 22 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
+
+Handle 0x0023, DMI type 221, 89 bytes
+OEM-specific Type
+	Header and Data:
+		DD 59 23 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 FF FF FF FF FF 0B 00 01 0A 00 00 00 0C 00 00
+		17 00 60 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
 		Lan Phy Version
@@ -890,390 +1288,12 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x0044, DMI type 32, 11 bytes
-System Boot Information
-	Status: No errors detected
-
-Handle 0x0045, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Abbreviated
-	Installable Languages: 1
-		enUS
-	Currently Installed Language: enUS
-
-Handle 0x0046, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: Keyboard
-	External Connector Type: PS/2
-	Port Type: Keyboard Port
-
-Handle 0x0047, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: Mouse
-	External Connector Type: PS/2
-	Port Type: Mouse Port
-
-Handle 0x0048, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: Other
-	External Reference Designator: COM 1
-	External Connector Type: None
-	Port Type: Serial Port 16550A Compatible
-
-Handle 0x0049, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1A2B
-	Internal Connector Type: Other
-	External Reference Designator: Video
-	External Connector Type: DB-15 female
-	Port Type: Video Port
-
-Handle 0x004A, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J3A2
-	Internal Connector Type: Other
-	External Reference Designator: HDMI
-	External Connector Type: None
-	Port Type: Video Port
-
-Handle 0x004B, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB1.1 - 1#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x004C, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB1.1 - 2#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x004D, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB1.1 - 3#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x004E, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB1.1 - 4#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x004F, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB1.1 - 5#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x0050, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB2.0 - 1#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x0051, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: USB2.0 - 2#
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x0052, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: None
-	Internal Connector Type: None
-	External Reference Designator: Ethernet
-	External Connector Type: RJ-45
-	Port Type: Network Port
-
-Handle 0x0053, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J8J1
-	Internal Connector Type: None
-	External Reference Designator: SATA Port 0 Direct Connect
-	External Connector Type: SAS/SATA Plug Receptacle
-	Port Type: SATA
-
-Handle 0x0054, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J7J1
-	Internal Connector Type: None
-	External Reference Designator: eSATA Port 4
-	External Connector Type: SAS/SATA Plug Receptacle
-	Port Type: SATA
-
-Handle 0x0055, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J6J1
-	Internal Connector Type: None
-	External Reference Designator: eSATA Port 3
-	External Connector Type: SAS/SATA Plug Receptacle
-	Port Type: SATA
-
-Handle 0x0056, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J7G1 - SATA Port 2
-	Internal Connector Type: SAS/SATA Plug Receptacle
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: SATA
-
-Handle 0x0057, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J7G2 - SATA Port 1
-	Internal Connector Type: SAS/SATA Plug Receptacle
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: SATA
-
-Handle 0x0058, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1F2
-	Internal Connector Type: None
-	External Reference Designator: AC IN
-	External Connector Type: Other
-	Port Type: Other
-
-Handle 0x0059, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J5B1 - PCH JTAG
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005A, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9A1 - TPM/PORT 80
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005B, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9E4 - HDA 2X8 Header
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005C, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9E7 - HDA 8Pin Header
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005D, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J8F1 - HDA HDMI
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005E, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9E3 - Scan Matrix Keyboard
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x005F, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J8E1 - SPI Program
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0060, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9E5 - LPC Hot Docking
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0061, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J9G2 - LPC SIDE BAND
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0062, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J8F2 - LPC Slot
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0063, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J8H3 - PCH XDP
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0064, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J6H1 - SATA Power
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0065, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J5J1 - FP Header
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0066, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J4H1 - ATX Power
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0067, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1J3 - AVMC
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0068, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1H1 - BATT B
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x0069, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1H2 - BATT A
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006A, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J2G1 - CPU Fan
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006B, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1D3 - XDP
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006C, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J4V1 - Memory Slot 1
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006D, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J4V2 - Memory Slot 2
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006E, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J4C1 - FAN PWR
-	Internal Connector Type: Other
-	External Reference Designator: None
-	External Connector Type: None
-	Port Type: Other
-
-Handle 0x006F, DMI type 136, 8 bytes
+Handle 0x0024, DMI type 248, 11 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 6F 00 00 00 00 00
+		F8 0B 24 00 00 01 53 55 00 00 00
 
-Handle 0x0070, DMI type 14, 8 bytes
-Group Associations
-	Name: $MEI
-	Items: 1
-		0x0000 (OEM-specific)
-
-Handle 0x0071, DMI type 219, 106 bytes
-OEM-specific Type
-	Header and Data:
-		DB 6A 71 00 01 04 01 45 02 00 A0 06 01 85 30 20
-		00 00 00 00 40 00 00 03 1F 04 00 C9 03 60 44 02
-		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
-		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00
-	Strings:
-		MEI1
-		MEI2
-		MEI3
-		MEI4
-
-Handle 0x0072, DMI type 136, 6 bytes
-OEM-specific Type
-	Header and Data:
-		88 06 72 00 00 00
-
-Handle 0x0073, DMI type 14, 26 bytes
-Group Associations
-	Name: Firmware Version Info
-	Items: 7
-		0x0020 (OEM-specific)
-		0x0021 (OEM-specific)
-		0x0022 (OEM-specific)
-		0x0023 (OEM-specific)
-		0x0024 (OEM-specific)
-		0x0025 (OEM-specific)
-		0x0043 (OEM-specific)
-
-Handle 0x0074, DMI type 127, 4 bytes
+Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
 
 
@@ -1290,24 +1310,24 @@ Container Check
 ====================================
 GCC Version
 ====================================
-gcc (GCC) 14.1.1 20240522
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 
 ====================================
 CPU Frequency
 ====================================
-Base Frequency:  2.80GHz
-Current Frequency: 3921.35 MHz
+Base Frequency:  2.30GHz
+Current Frequency: 2382.12 MHz
 
 ====================================
 RAM Performance (perf)
 ====================================
 
- Performance counter stats for process id '28893':
+ Performance counter stats for process id '39419':
 
-     6 748 992 995      mem-stores                                                            
+     7 004 549 518      mem-stores                                                            
                  0      mem-loads                                                             
 
-       3,003140945 seconds time elapsed
+       3,002992714 seconds time elapsed
 
 ====================================
 NIC Information (nethogs)
@@ -1317,6 +1337,6 @@ NIC Information (nethogs)
 ====================================
 SD Card Performance
 ====================================
-Read Bytes: 0
-Write Bytes: 0
+Read Bytes: 6889472
+Write Bytes: 6791168
 
