@@ -15,7 +15,7 @@ Here what we have to do is just follow the same steps to configure ecofloc as it
 
 ```
         // put your directory here
-        FILE *file = fopen("/home/luish/Documents/repoluispro/ecofloc-microservices/pids.txt", "r");
+        FILE *file = fopen("/home/your path here.../pids.txt", "r");
         if (file == NULL) 
 
 ```
