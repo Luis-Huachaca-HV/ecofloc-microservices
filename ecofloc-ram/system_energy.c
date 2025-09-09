@@ -1,5 +1,4 @@
- 
-/*
+ /*
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
 distributed with this work for additional information
@@ -19,14 +18,13 @@ under the License.
 */
 
 
-
-#include "pid_energy.h"
+#include "system_energy.h"
 #include "results_map.h"
 
 
 
 
-void strip_non_digit(char *src, char *dst) 
+void remove_non_digit(char *src, char *dst) 
 {
     while (*src) 
     {
@@ -37,14 +35,14 @@ void strip_non_digit(char *src, char *dst)
     *dst = '\0';
 }
 
-volatile sig_atomic_t keep_running = 1;
+volatile sig_atomic_t stay_running = 1;
 
-void handle_sigint(int sig) 
+void handle_signal(int sig) 
 {
-    keep_running = 0;
+    stay_running = 0;
 }
 
-double pid_energy(int pid, int interval_ms, int timeout_s)
+double system_energy(int interval_ms, int timeout_s)
 {
     time_t start_time = time(NULL);
     char command[512];
@@ -61,21 +59,20 @@ double pid_energy(int pid, int interval_ms, int timeout_s)
     //All to milliseconds to get the iterations to perform
     int total_iterations = (int)(timeout_s * 1000.0 / interval_ms);
 
-    
     /*
     * PATCH: Instead of stopping the loop based on timeout expiration, EcoFloc now iterates 
     * based on the computed number of iterations. 
-    * This approach prevents inconsistencies when handling multiple PIDs. 
-    * Example: If processing all PIDs in an iteration takes longer than the specified interval, 
+    * This approach prevents inconsistencies when iteration duration varies. 
+    * Example: If each iteration takes longer than the specified interval, 
     * relying solely on elapsed time could cause an early exit before completing the intended cycles.
     */
 
-    //while (keep_running && (time(NULL) - start_time) <= timeout_s)
+    //while (stay_running && (time(NULL) - start_time) <= timeout_s)
     int iteration=1;
-    while (keep_running && iteration <= total_iterations)
+    while (stay_running && iteration <= total_iterations)
     {
         // Construct the command to run perf
-        sprintf(command, "perf stat -e mem-stores,mem-loads -p %d --timeout=%d 2>&1", pid, interval_ms);
+        sprintf(command, "perf stat -e mem-stores,mem-loads --timeout=%d 2>&1", interval_ms);
 
         // Trigger perf
         FILE *fp = popen(command, "r");
@@ -95,7 +92,7 @@ double pid_energy(int pid, int interval_ms, int timeout_s)
         // Two possible output formats in perf: with and without the "cpu_core" prefix 
         int case_type = 0;
 
-        signal(SIGINT, handle_sigint);
+        signal(SIGINT, handle_signal);
 
         // If there is a new line in the file
         while (fgets(output, sizeof(output) - 1, fp) != NULL)
@@ -119,12 +116,12 @@ double pid_energy(int pid, int interval_ms, int timeout_s)
                 case_type = 2;
                 if (strstr(output, "cpu_core/mem-stores/") != NULL)
                 {
-                    strip_non_digit(output, clean_output);
+                    remove_non_digit(output, clean_output);
                     sscanf(clean_output, "%lf", &cpu_core_mem_stores);
                 }
                 else if (strstr(output, "cpu_core/mem-loads/") != NULL)
                 {
-                    strip_non_digit(output, clean_output);
+                    remove_non_digit(output, clean_output);
                     sscanf(clean_output, "%lf", &cpu_core_mem_loads);
                 }
             }
@@ -135,12 +132,12 @@ double pid_energy(int pid, int interval_ms, int timeout_s)
                     case_type = 1;
                     if (strstr(output, "mem-stores") != NULL)
                     {
-                        strip_non_digit(output, clean_output);
+                        remove_non_digit(output, clean_output);
                         sscanf(clean_output, "%lf", &mem_stores);
                     }
                     else if (strstr(output, "mem-loads") != NULL)
                     {
-                        strip_non_digit(output, clean_output);
+                        remove_non_digit(output, clean_output);
                         sscanf(clean_output, "%lf", &mem_loads);
                     }
                 }
@@ -163,8 +160,9 @@ double pid_energy(int pid, int interval_ms, int timeout_s)
             avg_interval_power = interval_energy / interval_s; // Average interval power
         }
 
-        // Write results
-        write_results(pid, time(NULL) - start_time, avg_interval_power,interval_energy, iteration,interval_ms);
+          //We fixed "-333" as the system identifier in the results file. 
+        int pid_for_system=-333;
+        write_results(pid_for_system, time(NULL) - start_time, avg_interval_power,interval_energy, iteration,interval_ms);
 
         total_energy += interval_energy;
 

@@ -35,7 +35,9 @@
 
 #define SHARED_OBJ_SIZE 4096 // 4KB
 #define SHARED_OBJ_NAME_ROOT "/ECOFLOC_NIC_" 
+
 extern char* SHARED_OBJ_NAME;
+extern char* filePath;
 
 
 /*
@@ -48,6 +50,7 @@ typedef struct
     union { //for pid OR command name
         int pid;
         char comm_name[256];
+        char sys_name[256];
     } identifier;
 
     int is_pid;
@@ -72,8 +75,8 @@ int create_results_object(const char* name, int* fd, void** ptr);
 * Description: This initializes the results structure and calls create_results_object()
 *              Identifier: The pid or the command name is_pid: 1 if is pid
 */
-void initialize_results_object(void *identifier, int is_pid);
-void write_results(int pid, int timestamp, double power,  double energy);
+void initialize_results_object(void *identifier, int type);
+void write_results(int pid, int timestamp, double power,  double energy, int iterations, int interval_ms);
 void print_results();
 void close_results_object();
 
