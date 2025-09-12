@@ -170,10 +170,10 @@ Run **EcoFloc** using the following format:
 
 ```bash  
 ecofloc --cpu -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --sd  -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --nic -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --ram -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --gpu -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --sd  -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --nic -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --ram -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --gpu -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
 ```  
 
 
