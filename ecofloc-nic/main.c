@@ -37,12 +37,29 @@ int main(int argc, char **argv)
     double total_time_s = 0.0;
     int verbose = 0;
     int system_mode = 0;
+    // adding variables for pids by file flag purposes
+    int pids_by_file = 0;
+    char* pidsFilePath = NULL;
 
     int opt;
-    while ((opt = getopt(argc, argv, "p:n:i:t:f:l:L:Sdv")) != -1)
+    while ((opt = getopt(argc, argv, "P:p:n:i:t:f:l:L:Sdv")) != -1)
     {
         switch (opt)
         {
+            case 'P':
+                pids_by_file = 1;
+                if (optarg)
+                {
+                    pidsFilePath = (char *)malloc(1024 * sizeof(char));
+                    if (!pidsFilePath) 
+                    {
+                        perror("Memory allocation failed for filePath");
+                        exit(EXIT_FAILURE);
+                    }
+                    strncpy(pidsFilePath, optarg, 1023); 
+                    pidsFilePath[1023] = '\0';  
+                }
+                break;
             case 'f':
                 export_to_csv = 1;
                 if (optarg) 
@@ -85,18 +102,18 @@ int main(int argc, char **argv)
                 verbose = 1;  
                 break;
             default:
-                fprintf(stderr, "Usage: %s [-p PID] [-n ProcessName] [-l Command] [-L Command] -i INTERVAL_MS -t TOTAL_TIME_S [-S] [-f] [-d] [-v]\n", argv[0]);
+                fprintf(stderr, "Usage: %s [-p PID] [-n ProcessName] [-P path/to/pids.txt] [-l Command] [-L Command] -i INTERVAL_MS -t TOTAL_TIME_S [-S] [-f] [-d] [-v]\n", argv[0]);
                 exit(EXIT_FAILURE);
         }
     }
 
-    int tracking_options = (pid != 0) + (processName != NULL) + 
+    int tracking_options = (pid != 0) + (processName != NULL) + (pids_by_file != 0) +
                            (launchCommandPID != NULL) + (launchCommandName != NULL) + 
                            (system_mode != 0);
 
     if (tracking_options != 1)
     {
-        fprintf(stderr, "Error: You must specify exactly one of -p, -n, -l, -L, or -S\n");
+        fprintf(stderr, "Error: You must specify exactly one of -P, -p, -n, -l, -L, or -S\n");
         exit(EXIT_FAILURE);
     }
 
@@ -173,7 +190,7 @@ int main(int argc, char **argv)
         {
             init_nic_features(&features);
             initialize_results_object(launchCommandName, 2);
-            comm_energy(launchCommandName, (int)interval_ms, (int)total_time_s);
+            comm_energy(launchCommandName, NULL, 0, (int)interval_ms, (int)total_time_s);
             print_results();
         }
         else
@@ -192,12 +209,29 @@ int main(int argc, char **argv)
         print_results();
     }
 
+    // Case: -P filepath -> Analyze the process that are in the txt file
+    else if (pids_by_file) {
+        FILE *file = fopen(pidsFilePath, "r");
+        if (file == NULL) 
+        {
+            perror("Failed to open pids file...");
+            exit(EXIT_FAILURE);
+        }
+        int num_pids = 0;
+        int *pids = read_pids_from_file(pidsFilePath, &num_pids);
+        init_nic_features(&features);
+        const char *pids_file_name = "PIDs by file";
+        initialize_results_object(pids_file_name, 2);
+        comm_energy(NULL, pids, num_pids, (int)interval_ms, (int)total_time_s);
+        print_results();
+    }
+
     // Case: -n processName -> Analyze an existing process by name
     else if (processName != NULL)
     {
         init_nic_features(&features);
         initialize_results_object(processName, 2);
-        comm_energy(processName, (int)interval_ms, (int)total_time_s);
+        comm_energy(processName, NULL, 0, (int)interval_ms, (int)total_time_s);
         print_results();
     }
 
@@ -206,6 +240,9 @@ int main(int argc, char **argv)
     if (filePath) 
     {
         free(filePath);
+    }
+    if (pidsFilePath) {
+        free(pidsFilePath);
     }
 
     return 0;

@@ -182,39 +182,53 @@ int is_treated(int pid)
 
 void *discover_pids(void *arg) 
 {
-    const char *cmd_name = (const char *)arg;
+    discover_pids_args_t *args = (discover_pids_args_t *)arg;
     global_start_time = time(NULL);
 
     while (1) 
     {
         int found_new_pid = 0;
-        DIR *dir = opendir("/proc");
-        if (dir == NULL) 
+        if (args->cmd_name) 
         {
-            perror("Failed to open /proc");
-            exit(EXIT_FAILURE);
-        }
-
-        struct dirent *entry;
-        while ((entry = readdir(dir)) != NULL) 
-        {
-            if (entry->d_type == DT_DIR && is_pid_folder(entry->d_name)) 
+            DIR *dir = opendir("/proc");
+            if (dir == NULL) 
             {
-                char cmd[256];
-                if (get_cmd_from_pid(entry->d_name, cmd, sizeof(cmd)) && strcmp(cmd, cmd_name) == 0) 
+                perror("Failed to open /proc");
+                exit(EXIT_FAILURE);
+            }
+
+            struct dirent *entry;
+            while ((entry = readdir(dir)) != NULL) 
+            {
+                if (entry->d_type == DT_DIR && is_pid_folder(entry->d_name)) 
                 {
-                    int pid = atoi(entry->d_name);
-                    if (!is_treated(pid)) 
+                    char cmd[256];
+                    if (get_cmd_from_pid(entry->d_name, cmd, sizeof(cmd)) && strcmp(cmd, args->cmd_name) == 0) 
                     {
-                        pthread_mutex_lock(&mutex);
-                        new_pids[new_pid_count++] = pid;
-                        found_new_pid = 1;
-                        pthread_mutex_unlock(&mutex);
+                        int pid = atoi(entry->d_name);
+                        if (!is_treated(pid)) 
+                        {
+                            pthread_mutex_lock(&mutex);
+                            new_pids[new_pid_count++] = pid;
+                            found_new_pid = 1;
+                            pthread_mutex_unlock(&mutex);
+                        }
                     }
                 }
             }
+            closedir(dir);
         }
-        closedir(dir);
+        else if (args->pids) {
+            for (int i = 0; i < args->num_pids; i++) {
+                int pid = args->pids[i];
+                if (!is_treated(pid)) {
+                    pthread_mutex_lock(&mutex);
+                    new_pids[new_pid_count++] = pid;
+                    found_new_pid = 1;
+                    pthread_mutex_unlock(&mutex);
+                }
+            }
+        }
 
         if (found_new_pid) 
             launch_energy_threads();
@@ -237,7 +251,7 @@ void *discover_pids(void *arg)
     return NULL;
 }
 
-void comm_energy(const char *cmd_name, int interval_ms, int timeout_s) 
+void comm_energy(const char *cmd_name, const int *pids, int num_pids, int interval_ms, int timeout_s) 
 {
     interval_ms_global = interval_ms;
     
@@ -252,7 +266,12 @@ void comm_energy(const char *cmd_name, int interval_ms, int timeout_s)
     pthread_mutex_init(&energy_mutex, NULL);
     pthread_mutex_init(&treated_mutex, NULL);
 
-    pthread_create(&discovery_tid, NULL, discover_pids, (void *)cmd_name);
+    discover_pids_args_t args = {
+        .cmd_name = cmd_name,
+        .pids = pids,
+        .num_pids = num_pids,
+    };
+    pthread_create(&discovery_tid, NULL, discover_pids, &args);
     pthread_join(discovery_tid, NULL);  // Wait for discovery thread to finish
 
     pthread_mutex_destroy(&mutex);

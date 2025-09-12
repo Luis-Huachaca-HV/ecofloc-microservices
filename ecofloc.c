@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     {
         printf("Usage:\n\n");
         printf("  # Monitor a specific process (CPU, RAM, SD, NIC)\n");
-        printf("  ecofloc --cpu|--ram|--sd|--nic -p <PID> | -n <ProcessName> \\\n");
+        printf("  ecofloc --cpu|--ram|--sd|--nic -p <PID> | -n <ProcessName> | -P <path/to/pids.txt> \\\n");
         printf("          -i <interval_ms> -t <timeout_s> [-d true|false] [-f <output_file>]\n\n");
         printf("  # Monitor the entire system (CPU, RAM, SD, NIC)\n");
         printf("  ecofloc --cpu|--ram|--sd|--nic --system \\\n");

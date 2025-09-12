@@ -1,4 +1,3 @@
- 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -78,7 +77,15 @@ void launch_energy_threads();
  */
 
 void *discover_pids(void *arg);
+int *read_pids_from_file(const char *pidsFilePath, int *num_pids);
 
-void comm_energy(const char *cmd_name, int interval_ms, int timeout_s);
+void comm_energy(const char *cmd_name, const int *pids, int num_pids, int interval_ms, int timeout_s);
+
+typedef struct
+{
+    const char *cmd_name;
+    const int *pids;
+    int num_pids;
+} discover_pids_args_t;
 
 #endif // COMM_ENERGY_H

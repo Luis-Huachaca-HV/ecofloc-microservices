@@ -144,23 +144,24 @@ ecofloc --cpu ...
 
 2. **Process ID (PID) (`-p`)** – Analyze an already running process by specifying its PID.  
 3. **Application Name (`-n`)** – Monitor all PIDs associated with an existing application.  
-4. **Launch Application (`-l`)** – Start an application and analyze only its main PID.  
-5. **Launch Application (`-L`)** – Start an application and monitor all PIDs associated with its name. *(If an instance is already running, it will be included in the analysis.)*  
-6. **System Mode (`-S`)** – *(Beta)* Analyze the entire system, aggregating the energy consumption of all running processes.  
+4. **Path/to/pids.txt (`-P`)** – Monitor all PIDs listed in a file txt format.  
+5. **Launch Application (`-l`)** – Start an application and analyze only its main PID.  
+6. **Launch Application (`-L`)** – Start an application and monitor all PIDs associated with its name. *(If an instance is already running, it will be included in the analysis.)*  
+7. **System Mode (`-S`)** – *(Beta)* Analyze the entire system, aggregating the energy consumption of all running processes.  
 
 
 ### **Time parameters**
 
 Then, specify the measuring interval and total analysis time:  
 
-7. **Total Analysis Time (`-t`)** – Defines the measurement duration. A negative value enables continuous analysis, which can be stopped with `Ctrl+C` to display results.  
-8. **Measurement Interval (`-i`)** – Sets how often **EcoFloc** collects load and power data. *Smaller values may increase CPU usage*.  
+8. **Total Analysis Time (`-t`)** – Defines the measurement duration. A negative value enables continuous analysis, which can be stopped with `Ctrl+C` to display results.  
+9. **Measurement Interval (`-i`)** – Sets how often **EcoFloc** collects load and power data. *Smaller values may increase CPU usage*.  
 
 ### **Extra Parameters**  
 
-9. **Dynamic Mode (`-d`)** – Allows **EcoFloc** to track applications that may be closed and reopened during analysis.  
-10. **Export Mode (`-f`)** – Saves measurement results to a CSV file at the specified path. If set to **default**, **EcoFloc** will use the path defined in `settings.conf` inside each component folder. The file includes, for each interval: measurement time, PID, average power, and energy consumed.  
-11. **Verbose Mode (`-v`)** – Shows warnings, especially when `-l` or `-L` is used.  
+10. **Dynamic Mode (`-d`)** – Allows **EcoFloc** to track applications that may be closed and reopened during analysis.  
+11. **Export Mode (`-f`)** – Saves measurement results to a CSV file at the specified path. If set to **default**, **EcoFloc** will use the path defined in `settings.conf` inside each component folder. The file includes, for each interval: measurement time, PID, average power, and energy consumed.  
+12. **Verbose Mode (`-v`)** – Shows warnings, especially when `-l` or `-L` is used.  
 
 
 ### Execution Commands  
@@ -168,11 +169,11 @@ Then, specify the measuring interval and total analysis time:
 Run **EcoFloc** using the following format:  
 
 ```bash  
-ecofloc --cpu -p or -n [PID or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --sd  -p or -n [PID or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --nic -p or -n [PID or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --ram -p or -n [PID or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
-ecofloc --gpu -p or -n [PID or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --cpu -p or -P or -n [PID or Path/to/pids.txt or App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --sd  -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --nic -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --ram -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
+ecofloc --gpu -p or -P or -n [PID or Path/to/pids.txtor App Name] or -l or -L [App Name] or -S -i [interval] -t [duration] -d -v -f [path]  
 ```  
 
 
